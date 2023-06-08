@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/filter.css">
+    <link rel="stylesheet" href="./public/css/show.css">
+    <link rel="stylesheet" href="./public/css/style_blog.css">
+    <link rel="stylesheet" href="./public/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/linearicons/icon-font.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./public/js/app_blog.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-STLgXNz4T8hJ5i7sZfHJxllO9g8bOy9zQmrdGN4QIsV5e8pDkLsFp5p9J/y5B8pE" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <div class="header bg-black position-relative">
+      <div class="container top-head">
+        <div class="py-2 top-header"><span class="text-white-50">Free shipping for standard order over $100</span>
+          <div class="right-control"><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">Help &amp; FAQs</a><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">My Account</a><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">EN</a><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">USD</a>
+          </div>
+        </div>
+      </div>
+      <div class="top-nav">
+            <nav class="navbar navbar-expand-lg bg-light py-4">
+              <div class="container"><a class="navbar-brand me-4" href="index.html"><img src="./public/images/icons/logo-01.png" alt="IMG-LOGO"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop                   </a></li>
+                    <li class="nav-item dropdown nav-item-hot" data-item="hot"><a class="nav-link active" href="shoping-cart.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog                 </a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About                  </a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  </ul>
+                  <div class="d-flex justify-content-between">
+                    <div class="icon-header-item px-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="zmdi zmdi-search"></i></div>
+                    <div class="icon-header-item icon-header-noti px-3" data-notify="0"><i class="zmdi zmdi-shopping-cart"></i></div>
+                    <div class="icon-header-item icon-header-noti px-3" href="#" data-notify="0"><i class="zmdi zmdi-favorite-outline"></i></div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+      </div>
+    </div>
+    <div class="content container">
+      <div class="container">
+        <div class="product-content">
+          <div class="title-product-overview">PRODUCT OVERVIEW</div>
+        </div>
+        <div class="product-filter">
+          <div class="product-filter-text"> 
+            <button class="filter-content actived" id="all">All product</button>
+            <button class="filter-content" id="woman">Woman </button>
+            <button class="filter-content" id="men">Men </button>
+            <button class="filter-content" id="bag">Bag</button>
+            <button class="filter-content" id="watch">Watches</button>
+            <button class="filter-content" id="shoes">Shoes</button>
+          </div>
+          <div class="product-filter-btn">
+            <div class="search"> 
+              <div class="product-search-text">Search</div>
+              <div class="filter-click"></div>
+            </div>
+            <div class="filter">
+              <div class="product-filter-text">Filter</div>
+              <div class="filter-click"></div>
+            </div>
+          </div>
+        </div>
+        <div class="product-filter-btn-display"> 
+          <input class="input-search" type="text" placeholder="Search">
+          <div class="list-filter d-none row"> 
+            <div class="title-filter col-md-3">Sort By
+              <ul id="textfilter">
+                <li><a href="#">Default</a></li>
+                <li><a href="#">Populary</a></li>
+                <li><a href="#">Rating</a></li>
+                <li><a href="#">Newness</a></li>
+                <li><a href="#">Price: Low to High</a></li>
+                <li><a href="#">Price: High to low</a></li>
+              </ul>
+            </div>
+            <div class="title-filter col-md-3">Price
+              <ul id="textfilter">
+                <li><a href="#">All</a></li>
+                <li><a href="#">$0.00 - $50.00</a></li>
+                <li><a href="#">$50.00 - $100.00</a></li>
+                <li><a href="#">$100.00 - $150.00</a></li>
+                <li><a href="#">$150.00 - $200.00</a></li>
+                <li><a href="#">$200.00+</a></li>
+              </ul>
+            </div>
+            <div class="title-filter col-md-3">Color
+              <ul id="textfilter">
+                <li><span style="background:Red"></span><a href="#">Red</a></li>
+                <li><span style="background:Blue"></span><a href="#">Blue</a></li>
+                <li><span style="background:Black"></span><a href="#">Black</a></li>
+                <li><span style="background:Green"></span><a href="#">Green</a></li>
+                <li><span style="background:Gray"></span><a href="#">Gray</a></li>
+                <li><span style="background:White"></span><a href="#">White</a></li>
+              </ul>
+            </div>
+            <div class="title-filter col-md-3">Tag
+              <p id="textfilter"><a class="tag" href="#">Fashion </a><a class="tag" href="#">Lifestyle</a><a class="tag" href="#">Denim</a><a class="tag" href="#">StreetStyle</a><a class="tag" href="#">Crafts  </a></p>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-01.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Esprit Ruffle Shirt</div>
+              <div class="product-price">$16.64</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-02.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Herschel supply</div>
+              <div class="product-price">$16.64</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product men all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-03.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Only Check Trouser</div>
+              <div class="product-price">$16.64</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-04.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Classic Trench Coat</div>
+              <div class="product-price">$75.00</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-05.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Front Pocket Jumper</div>
+              <div class="product-price">$34.75</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product watch all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-06.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Vintage Inspired Classic</div>
+              <div class="product-price">$93.20</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-07.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Shirt in Stectch Cotton</div>
+              <div class="product-price">$52.66</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-08.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Pieces Metallic Printed</div>
+              <div class="product-price">$18.96</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product shoes all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-09.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Converse All Star Hi Plimsolls</div>
+              <div class="product-price">$75.00</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-10.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Femme T-Shirt In Stripe</div>
+              <div class="product-price">$25.64</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product men all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-11.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Herschel supply</div>
+              <div class="product-price">$663.16</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product men all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-12.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Herschel supply</div>
+              <div class="product-price">$63.15</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-13.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">T-Shirt with Sleeve</div>
+              <div class="product-price">$18.49</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-14.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Pretty Little Thing</div>
+              <div class="product-price">$54.79</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product watch all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-15.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Mini Silver Mesh Watch</div>
+              <div class="product-price">$86.85</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+          <div class="product woman all">
+            <div class="product-image"><img class="product-img" src="./public/images/product-16.jpg" alt=""/>
+              <div class="product-btn"> Quick View</div>
+            </div>
+            <div class="product-text">
+              <div class="product-name">Square Neck Back</div>
+              <div class="product-price">$29.64</div>
+              <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="product-btn-last"><a href="shop.html"> LOAD MORE    </a></div>
+        <div class="product-detail">
+          <div class="productshow row"> 
+            <div class="product-image-detail col-md-1">  <a href="#">
+                <div class="productshow-img"><img width="100%" src="./public/images/product-detail-01.jpg" alt=""></div></a><a href="#">
+                <div class="productshow-img"><img width="100%" src="./public/images/product-detail-02.jpg" alt=""></div></a><a href="#">
+                <div class="productshow-img"><img width="100%" src="./public/images/product-detail-03.jpg" alt=""></div></a></div>
+            <div class="product-image-main col-md-6"><img width="100%" src="./public/images/product-detail-01.jpg" alt=""></div>
+            <div class="productshow-content col-md-5"><br>
+              <h3 class="productshow-name"> Lightweight Jacket</h3><br>
+              <h4 class="productshow-price">$58.79</h4><br>
+              <div class="productshow-decs">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</div><br>
+              <div class="productshow-addcart">
+                <div class="productshow-select"><span>Size</span>
+                  <select name="size" id="size"> 
+                    <option value="#">Choose an option</option>
+                    <option value="Size S">Size S</option>
+                    <option value="Size M">Size M</option>
+                    <option value="Size L">Size L</option>
+                    <option value="Size XL">Size XL</option>
+                  </select>
+                </div>
+                <p></p>
+                <div class="productshow-select"><span>Color</span>
+                  <select name="color" id="color"> 
+                    <option value="#">Choose an option</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Grey">Grey </option>
+                    <option value="White">White</option>
+                  </select>
+                </div><br>
+                <div class="soLuong">
+                  <div class="wrapper"><span class="minus">-</span><span class="num">01</span><span class="plus">+</span></div>
+                </div><br>
+                <div class="btnDetail">
+                  <div class="btn productshow"><a class="all-btn text-decoration-none" href="#"> ADD TO CART </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-5 pb-4">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-md-6 col-lg-3">
+            <h5>Categories</h5>
+            <ul>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Women</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Men</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Shoes</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Watches</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5>Help</h5>
+            <ul>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Track Order</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Returns</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Shipping</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>FAQs</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5>GET IN TOUCH</h5>
+            <p class="text-secondary">
+              Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us
+              on (+1) 96 716 6879
+            </p>
+            <div class="p-t-27"><a class="fs-18 cl7 hov-cl1 trans-04 m-r-16 active text-secondary me-3 fs-5" href="#"><i class="fa fa-facebook"></i></a><a class="fs-18 cl7 hov-cl1 trans-04 m-r-16 active text-secondary me-3 fs-5" href="#"><i class="fa fa-instagram"></i></a><a class="fs-18 cl7 hov-cl1 trans-04 m-r-16 active text-secondary me-3 fs-5" href="#"><i class="fa fa-pinterest-p"></i></a></div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5>Newsletter</h5>
+            <form>
+              <input class="input-email" type="text" name="email" placeholder="email@example.com">
+              <button class="btn btn-sub rounded-pill mt-3 px-5 py-2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="pt-4">
+          <div class="text-center pb-4"><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-01.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-02.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-03.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-04.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-05.png" alt="ICON-PAY"></a></div>
+          <p class="text-center text-secondary">Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a class="text-decoration-none" href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./public/js/app.js">  </script>
+  <script src="./public/js/slide.js"> </script>
+</html>

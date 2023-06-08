@@ -1,0 +1,14 @@
+#myBtn.btn-top.position-fixed.bottom-0
+    .top.text-white.fw-bold.fs-3.text-center
+        i.zmdi.zmdi-chevron-up
+
+// Modal search
+#exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .modal-header
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body
+        form.d-flex(role='search')
+            input.form-control.me-2(type='search' name='search' placeholder='Search' aria-label='Search')
+            button.btn.btn-outline-success(type='submit') Search

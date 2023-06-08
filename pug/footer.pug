@@ -1,0 +1,58 @@
+footer.pt-5.pb-4
+  .container
+    .row.text-white
+      .col-md-6.col-lg-3
+        h5
+          | Categories
+        ul
+          +footerCategory('#', 'Women')
+          +footerCategory('#', 'Men')
+          +footerCategory('#', 'Shoes')
+          +footerCategory('#', 'Watches')
+      .col-md-6.col-lg-3
+        h5
+          | Help
+        ul
+          +footerCategory('#', 'Track Order')
+          +footerCategory('#', 'Returns')
+          +footerCategory('#', 'Shipping')
+          +footerCategory('#', 'FAQs')
+      .col-md-6.col-lg-3
+        h5
+          | GET IN TOUCH
+        p.text-secondary
+          | Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us
+          | on (+1) 96 716 6879
+        .p-t-27
+          a.fs-18.cl7.hov-cl1.trans-04.m-r-16(href='#').active.text-secondary.me-3.fs-5
+            i.fa.fa-facebook
+          a.fs-18.cl7.hov-cl1.trans-04.m-r-16(href='#').active.text-secondary.me-3.fs-5
+            i.fa.fa-instagram
+          a.fs-18.cl7.hov-cl1.trans-04.m-r-16(href='#').active.text-secondary.me-3.fs-5
+            i.fa.fa-pinterest-p
+      .col-md-6.col-lg-3
+        h5
+          | Newsletter
+        form
+          input.input-email(type='text' name='email' placeholder='email@example.com')
+          button.btn.btn-sub.rounded-pill.mt-3.px-5.py-2 Subscribe
+    .pt-4
+      .text-center.pb-4
+        a.me-1(href='#')
+          img(src='./public/images/icons/icon-pay-01.png' alt='ICON-PAY')
+        a.me-1(href='#')
+          img(src='./public/images/icons/icon-pay-02.png' alt='ICON-PAY')
+        a.me-1(href='#')
+          img(src='./public/images/icons/icon-pay-03.png' alt='ICON-PAY')
+        a.me-1(href='#')
+          img(src='./public/images/icons/icon-pay-04.png' alt='ICON-PAY')
+        a.me-1(href='#')
+          img(src='./public/images/icons/icon-pay-05.png' alt='ICON-PAY')
+      p.text-center.text-secondary
+        | Copyright &copy;
+        script.
+          document.write(new Date().getFullYear());
+        |  All rights reserved | This template is made with 
+        i.fa.fa-heart-o(aria-hidden='true')
+        |  by 
+        a(href='https://colorlib.com' target='_blank').text-decoration-none Colorlib

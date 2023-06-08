@@ -1,0 +1,13 @@
+include ../mixins/mixins_blog
+
+.header.bg-black.position-relative
+    .container.top-head
+        .py-2.top-header
+            span.text-white-50 Free shipping for standard order over $100
+            .right-control
+                +header("#", "Help & FAQs")
+                +header("#", "My Account")
+                +header("#", "EN")
+                +header("#", "USD")
+    .top-nav
+        +navbar()

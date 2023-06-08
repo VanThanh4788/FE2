@@ -1,0 +1,38 @@
+.container
+    .banner-contact
+      .px-5.py-5.border.message
+        form
+          h4.text-center.pb-3
+            | Send Us A Message
+          .position-relative.input-email.mb-3
+            input.form-control.ps-5(type='text' name='email' placeholder='Your Email Address')
+            img.position-absolute.top-0(src='./public/images/icons/icon-email.png' alt='ICON')
+          .mb-3
+            textarea.form-control.px-4.py-4.msg(name='msg' placeholder='How Can We Help?' col='5')
+          button.btn.rounded-pill.btn-post.text-white.btn-submit.py-2
+            | Submit
+      .px-5.py-5.d-flex.justify-content-center.flex-column.border.message
+        .d-flex.mt-5
+          span.fs-5.text-center
+            span.lnr.lnr-map-marker
+          .pb-2
+            span.fs-5.ps-2
+              | Address
+            p.pt-3.text-secondary
+              | Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+        .d-flex
+          span.fs-5.text-center
+            span.lnr.lnr-phone-handset
+          .pb-2
+            span.fs-5.ps-2
+              | Lets Talk
+            p.pt-3.activtion
+              | +1 800 1236879
+        .d-flex
+          span.fs-5.text-center
+            span.lnr.lnr-envelope
+          .pb-2
+            span.fs-5.ps-2
+              | Sale Support
+            p.pt-3.activtion
+              | contact@example.com

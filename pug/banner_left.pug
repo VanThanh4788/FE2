@@ -1,0 +1,60 @@
+.product.position-relative
+  img(src='./public/images/blog-04.jpg' alt='IMG-BLOG').img-fluid
+  .product-date.position-absolute
+    .date
+        span.fw-bold.fs-1.ps-3
+            | 22
+        p.text-center
+            | Jan 2018
+.product-description.my-5
+  span
+    span
+      span.text-secondary By
+      |  Admin
+      span.px-2 |
+    span
+      | 22 Jan, 2018
+      span.px-2 |
+    span
+      | StreetStyle, Fashion, Couple
+      span.px-2 |
+    span
+      | 8 Comments
+  h1.py-3.fw-bold
+    | 8 Inspiring Ways to Wear Dresses in the Winter
+  p.pt-2.text-body-secondary
+    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet est vel orci
+    | luctus sollicitudin. Duis eleifend vestibulum justo, varius semper lacus condimentum
+    | dictum. Donec pulvinar a magna ut malesuada. In posuere felis diam, vel sodales metus
+    | accumsan in. Duis viverra dui eu pharetra pellentesque. Donec a eros leo. Quisque sed
+    | ligula vitae lorem efficitur faucibus. Praesent sit amet imperdiet ante. Nulla id tellus
+    | auctor, dictum libero a, malesuada nisi. Nulla in porta nibh, id vestibulum ipsum.
+    | Praesent dapibus tempus erat quis aliquet. Donec ac purus id sapien condimentum feugiat.
+  p.pt-2.text-body-secondary
+    | Praesent vel mi bibendum, finibus leo ac, condimentum arcu. Pellentesque sem ex,
+    | tristique sit amet suscipit in, mattis imperdiet enim. Integer tempus justo nec velit
+    | fringilla, eget eleifend neque blandit. Sed tempor magna sed congue auctor. Mauris eu
+    | turpis eget tortor ultricies elementum. Phasellus vel placerat orci, a venenatis justo.
+    | Phasellus faucibus venenatis nisl vitae vestibulum. Praesent id nibh arcu. Vivamus
+    | sagittis accumsan felis, quis vulputate
+.d-flex.my-5
+  span.fs-5
+    | Tags 
+    span.me-4 
+    a.text-decoration-none.text-body-secondary.tag.fs-6.px-3.py-1.me-3(href='#')
+      |  Streetstyle 
+    a.text-decoration-none.text-body-secondary.tag.fs-6.px-3.py-1.me-3(href='#')
+      | Crafts 
+
+.comment.mb-5
+  h5.fs-2.pb-2
+    | Leave a Comment
+  p.text-body-secondary.pb-4
+    | Your email address will not be published. Required fields are marked *
+  form
+    textarea.form-control.mb-4(rows="5")(name='cmt' placeholder='Comment...')
+    input.form-control.mb-4(type='text' name='name' placeholder='Name *')
+    input.form-control.mb-4(type='text' name='email' placeholder='Email *')
+    input.form-control.mb-4(type='text' name='web' placeholder='Website')
+    button.btn.btn-post.text-white.px-5.py-2.mb-5
+      | Post Comment

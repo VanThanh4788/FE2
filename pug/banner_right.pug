@@ -1,0 +1,36 @@
+.side-menu
+    .position-relative.mb-5
+        input.form-control.rounded-pill.py-3(type='text' name='search' placeholder='Search')
+        button.btn.btn-input
+            i.zmdi.zmdi-search
+    .category
+        h4.fw-bold Categories
+        ul.list-group.list-group-flush.my-4.categories
+            +categories('#', 'Fashion')
+            +categories('#', 'Beauty')
+            +categories('#', 'Street Style')
+            +categories('#', 'Life Style')
+            +categories('#', `DIY & Crafts`)
+        h4.fw-bold Featured Products
+        ul
+            +product('#', './public/images/product-min-01.jpg', 'White Shirt With Pleat Detail Back', '$19.00')
+            +product('#', './public/images/product-min-02.jpg', 'Converse All Star Hi Black Canvas', '$39.00')
+            +product('#', './public/images/product-min-03.jpg', 'Nixon Porter Leather Watch In Tan', '$17.00')
+        h4.fw-bold.my-4 Archive
+        ul
+            +archive('#', 'July 2018', '(9)')
+            +archive('#', 'June 2018', '(39)')
+            +archive('#', 'May 2018', '(29)')
+            +archive('#', 'April 2018', '(35)')
+            +archive('#', 'March 2018', '(22)')
+            +archive('#', 'February 2018', '(32)')
+            +archive('#', 'January 2018', '(21)')
+            +archive('#', 'December 2017', '(26)')
+
+        h4.fw-bold Tags
+        .d-flex.flex-wrap
+            +tags('#', 'Fashion')
+            +tags('#', 'Lifestyle')
+            +tags('#', 'Denim')
+            +tags('#', 'Streetstyle')
+            +tags('#', 'Crafts')

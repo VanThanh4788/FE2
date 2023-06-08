@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/font/all.min.css">
+    <link rel="stylesheet" href="./public/font/all.css">
+    <link rel="stylesheet" href="./public/font/fontawesome.min.css">
+    <link rel="stylesheet" href="./public/font/fontawesome.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/filter.css">
+    <link rel="stylesheet" href="./public/css/show.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-STLgXNz4T8hJ5i7sZfHJxllO9g8bOy9zQmrdGN4QIsV5e8pDkLsFp5p9J/y5B8pE" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <div class="container">
+      <div class="product-content">
+        <div class="title-product-overview">PRODUCT OVERVIEW</div>
+      </div>
+      <div class="product-filter">
+        <div class="product-filter-text"> 
+          <button class="filter-content active" id="all">All product</button>
+          <button class="filter-content" id="woman">Woman </button>
+          <button class="filter-content" id="men">Men </button>
+          <button class="filter-content" id="bag">Bag</button>
+          <button class="filter-content" id="watch">Watches</button>
+          <button class="filter-content" id="shoes">Shoes</button>
+        </div>
+        <div class="product-filter-btn">
+          <div class="search"> 
+            <div class="product-search-text">Search</div>
+            <div class="filter-click"></div>
+          </div>
+          <div class="filter">
+            <div class="product-filter-text">Filter</div>
+            <div class="filter-click"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-filter-btn-display"> 
+        <input class="input-search" type="text" placeholder="Search">
+        <div class="list-filter row"> 
+          <div class="title-filter col-md-3">Sort By
+            <ul id="textfilter">
+              <li><a href="#">Default</a></li>
+              <li><a href="#">Populary</a></li>
+              <li><a href="#">Rating</a></li>
+              <li><a href="#">Newness</a></li>
+              <li><a href="#">Price: Low to High</a></li>
+              <li><a href="#">Price: High to low</a></li>
+            </ul>
+          </div>
+          <div class="title-filter col-md-3">Price
+            <ul id="textfilter">
+              <li><a href="#">All</a></li>
+              <li><a href="#">$0.00 - $50.00</a></li>
+              <li><a href="#">$50.00 - $100.00</a></li>
+              <li><a href="#">$100.00 - $150.00</a></li>
+              <li><a href="#">$150.00 - $200.00</a></li>
+              <li><a href="#">$200.00+</a></li>
+            </ul>
+          </div>
+          <div class="title-filter col-md-3">Color
+            <ul id="textfilter">
+              <li><span style="background:Red"></span><a href="#">Red</a></li>
+              <li><span style="background:Blue"></span><a href="#">Blue</a></li>
+              <li><span style="background:Black"></span><a href="#">Black</a></li>
+              <li><span style="background:Green"></span><a href="#">Green</a></li>
+              <li><span style="background:Gray"></span><a href="#">Gray</a></li>
+              <li><span style="background:White"></span><a href="#">White</a></li>
+            </ul>
+          </div>
+          <div class="title-filter col-md-3">Tag
+            <p id="textfilter"><a class="tag" href="#">Fashion </a><a class="tag" href="#">Lifestyle</a><a class="tag" href="#">Denim</a><a class="tag" href="#">StreetStyle</a><a class="tag" href="#">Crafts  </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-01.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Esprit Ruffle Shirt</div>
+            <div class="product-price">$16.64</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-02.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Herschel supply</div>
+            <div class="product-price">$16.64</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product men all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-03.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Only Check Trouser</div>
+            <div class="product-price">$16.64</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-04.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Classic Trench Coat</div>
+            <div class="product-price">$75.00</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-05.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Front Pocket Jumper</div>
+            <div class="product-price">$34.75</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product watch all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-06.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Vintage Inspired Classic</div>
+            <div class="product-price">$93.20</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-07.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Shirt in Stectch Cotton</div>
+            <div class="product-price">$52.66</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-08.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Pieces Metallic Printed</div>
+            <div class="product-price">$18.96</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product shoes all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-09.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Converse All Star Hi Plimsolls</div>
+            <div class="product-price">$75.00</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-10.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Femme T-Shirt In Stripe</div>
+            <div class="product-price">$25.64</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product men all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-11.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Herschel supply</div>
+            <div class="product-price">$663.16</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product men all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-12.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Herschel supply</div>
+            <div class="product-price">$63.15</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-13.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">T-Shirt with Sleeve</div>
+            <div class="product-price">$18.49</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-14.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Pretty Little Thing</div>
+            <div class="product-price">$54.79</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product watch all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-15.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Mini Silver Mesh Watch</div>
+            <div class="product-price">$86.85</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="product woman all">
+          <div class="product-image"><img class="product-img" src="./public/images/product-16.jpg" alt=""/>
+            <div class="product-btn"> Quick View</div>
+          </div>
+          <div class="product-text">
+            <div class="product-name">Square Neck Back</div>
+            <div class="product-price">$29.64</div>
+            <div class="product-icon"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-btn-last"><a href="#"> LOAD MORE    </a></div>
+      <div class="product-detail">
+        <div class="productshow row"> 
+          <div class="product-image-detail col-md-1">  <a href="#">
+              <div class="productshow-img"><img width="100%" src="./public/images/product-detail-01.jpg" alt=""></div></a><a href="#">
+              <div class="productshow-img"><img width="100%" src="./public/images/product-detail-02.jpg" alt=""></div></a><a href="#">
+              <div class="productshow-img"><img width="100%" src="./public/images/product-detail-03.jpg" alt=""></div></a></div>
+          <div class="product-image-main col-md-6"><img width="100%" src="./public/images/product-detail-01.jpg" alt=""></div>
+          <div class="productshow-content col-md-5"><br>
+            <h3 class="productshow-name"> Lightweight Jacket</h3><br>
+            <h4 class="productshow-price">$58.79</h4><br>
+            <div class="productshow-decs">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</div><br>
+            <div class="productshow-addcart">
+              <div class="productshow-select"><span>Size</span>
+                <select name="size" id="size"> 
+                  <option value="#">Choose an option</option>
+                  <option value="Size S">Size S</option>
+                  <option value="Size M">Size M</option>
+                  <option value="Size L">Size L</option>
+                  <option value="Size XL">Size XL</option>
+                </select>
+              </div>
+              <p></p>
+              <div class="productshow-select"><span>Color</span>
+                <select name="color" id="color"> 
+                  <option value="#">Choose an option</option>
+                  <option value="Red">Red</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Grey">Grey </option>
+                  <option value="White">White</option>
+                </select>
+              </div><br>
+              <div class="soLuong">
+                <div class="wrapper"><span class="minus">-</span><span class="num">01</span><span class="plus">+</span></div>
+              </div><br>
+              <div class="btnDetail">
+                <div class="btn productshow"><a class="all-btn" href="#"> ADD TO CART </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./public/js/app.js">   </script>
+    <script src="./public/js/slide.js">                 </script>
+  </body>
+</html>
