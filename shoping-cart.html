@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+    <link rel="stylesheet" href="./public/css/style_blog.css">
+    <link rel="stylesheet" href="./public/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/linearicons/icon-font.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./public/js/app_blog.js"> </script>
+    <link rel="stylesheet" href="./public/css/show.css">
+  </head>
+  <body> 
+    <div class="header bg-black position-relative">
+      <div class="container top-head">
+        <div class="py-2 top-header"><span class="text-white-50">Free shipping for standard order over $100</span>
+          <div class="right-control"><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">Help &amp; FAQs</a><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">My Account</a><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">EN</a><a class="text-white-50 text-decoration-none mx-2 px-4 header-control" href="#">USD</a>
+          </div>
+        </div>
+      </div>
+      <div class="top-nav">
+            <nav class="navbar navbar-expand-lg bg-light py-4">
+              <div class="container"><a class="navbar-brand me-4" href="index.html"><img src="./public/images/icons/logo-01.png" alt="IMG-LOGO"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop                   </a></li>
+                    <li class="nav-item dropdown nav-item-hot" data-item="hot"><a class="nav-link active" href="shoping-cart.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog                 </a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About                  </a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  </ul>
+                  <div class="d-flex justify-content-between">
+                    <div class="icon-header-item px-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="zmdi zmdi-search"></i></div>
+                    <div class="icon-header-item icon-header-noti px-3" data-notify="0"><i class="zmdi zmdi-shopping-cart"></i></div>
+                    <div class="icon-header-item icon-header-noti px-3" href="#" data-notify="0"><i class="zmdi zmdi-favorite-outline"></i></div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="path mb-5 ms-4"><a class="text-decoration-none active text-body-secondary" href="index.html">Home<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i></a><span class="text-decoration-none text-body-tertiary"></span><a class="text-decoration-none active text-body-secondary" href=""><i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i></a><span class="text-decoration-none text-body-tertiary">Shoping Cart</span>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-xl-7 mb-5">
+          <div class="me-2 ms-3">
+            <div class="table-shopping-cart">
+              <table class="table border mb-0">
+                <tbody>
+                  <tr>
+                    <th>Product</th>
+                    <th></th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                  <tr>
+                    <td><img src="./public/images/item-cart-04.jpg" alt="IMG"></td>
+                    <td class="pt-5 lh-1">Fresh Strawberries</td>
+                    <td class="pt-5 lh-1">$ 36.00</td>
+                    <td>
+                      <div class="soLuong mt-3">
+                        <div class="wrapper ms-0"><span class="minus">-</span><span class="num">01</span><span class="plus">+</span></div>
+                      </div>
+                    </td>
+                    <td class="pt-5 lh-1">$ 36.00</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./public/images/item-cart-05.jpg" alt="IMG"></td>
+                    <td class="pt-5 lh-1">Lightweight Jacket</td>
+                    <td class="pt-5 lh-1">$ 16.00</td>
+                    <td>
+                      <div class="soLuong mt-3">
+                        <div class="wrapper ms-0"><span class="minus">-</span><span class="num">01</span><span class="plus">+</span></div>
+                      </div>
+                    </td>
+                    <td class="pt-5 lh-1">$ 16.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="coupon-code">
+                <input class="form-control rounded-pill" type="text" name="coupon" placeholder="Coupon Code">
+                <div class="btn rounded-pill bg-secondary-subtle mx-4 px-5 btn-apply">Apply coupon</div>
+                <div class="btn rounded-pill bg-secondary-subtle mx-4 px-5 btn-update">Update Cart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10 col-lg-7 col-xl-5 mb-5">
+          <div class="border py-3 cart-total">
+            <h4 class="pb-3">Cart Totals</h4>
+            <div class="d-flex border-bottom pb-3 mb-3"><span class="fw-bold pe-4">Subtotal:</span><span class="fw-bold">$79.65</span></div>
+            <div class="border-bottom pb-2">
+              <div class="d-flex"><span class="fw-bold pe-4">Shipping:</span>
+                <p class="pe-2">
+                  There are no shipping methods available. Please double check your address, or
+                  contact us if you need any help.
+                </p>
+              </div>
+              <div class="ps-5 ms-5"><span>CALCULATE SHIPPING
+                  <select class="form-select form-select-sm mb-2" name="time" tabindex="-1" aria-hidden="true">
+                    <option>Select a country...</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                  </select>
+                  <input class="form-control mb-2" type="text" name="state" placeholder="State /  country">
+                  <input class="form-control mb-2" type="text" name="postcode" placeholder="Postcode / Zip"></span>
+                <div class="btn rounded-pill btn-update bg-secondary-subtle px-4">Update Totals</div>
+              </div>
+            </div>
+            <div class="d-flex py-3"><span class="fw-bold pe-4 me-4">Total:</span><span>$79.65</span></div>
+            <button class="btn-post text-white px-5 py-2">Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-top position-fixed bottom-0" id="myBtn">
+      <div class="top text-white fw-bold fs-3 text-center"><i class="zmdi zmdi-chevron-up"></i></div>
+    </div>
+    <!-- Modal search-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-5 pb-4">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-md-6 col-lg-3">
+            <h5>Categories</h5>
+            <ul>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Women</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Men</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Shoes</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Watches</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5>Help</h5>
+            <ul>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Track Order</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Returns</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>Shipping</span></a></li>
+                  <li class="list-group-item align-items-start py-1"><a class="d-flex justify-content-between text-decoration-none text-secondary active" href="#"><span>FAQs</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5>GET IN TOUCH</h5>
+            <p class="text-secondary">
+              Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us
+              on (+1) 96 716 6879
+            </p>
+            <div class="p-t-27"><a class="fs-18 cl7 hov-cl1 trans-04 m-r-16 active text-secondary me-3 fs-5" href="#"><i class="fa fa-facebook"></i></a><a class="fs-18 cl7 hov-cl1 trans-04 m-r-16 active text-secondary me-3 fs-5" href="#"><i class="fa fa-instagram"></i></a><a class="fs-18 cl7 hov-cl1 trans-04 m-r-16 active text-secondary me-3 fs-5" href="#"><i class="fa fa-pinterest-p"></i></a></div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5>Newsletter</h5>
+            <form>
+              <input class="input-email" type="text" name="email" placeholder="email@example.com">
+              <button class="btn btn-sub rounded-pill mt-3 px-5 py-2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="pt-4">
+          <div class="text-center pb-4"><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-01.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-02.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-03.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-04.png" alt="ICON-PAY"></a><a class="me-1" href="#"><img src="./public/images/icons/icon-pay-05.png" alt="ICON-PAY"></a></div>
+          <p class="text-center text-secondary">Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a class="text-decoration-none" href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./public/js/slide.js"></script>
+  </body>
+</html>

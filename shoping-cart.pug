@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Shoping Cart
+        include ./pug/head
+        link(rel="stylesheet" href="./public/css/show.css")
+    body 
+
+        include ./pug/header
+
+        .container
+            .path.mb-5.ms-4
+                +path('Home', 'index.html', '')
+                +path('', '', 'Shoping Cart')
+
+            include ./pug/cart
+
+        include ./pug/control
+        include ./pug/footer
+        script(src="./public/js/slide.js")

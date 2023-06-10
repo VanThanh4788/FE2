@@ -1,0 +1,76 @@
+.row
+  .col-lg-10.col-xl-7.mb-5
+    .me-2.ms-3
+      .table-shopping-cart
+        table.table.border.mb-0
+          tbody
+            tr
+              th Product
+              th
+              th Price
+              th Quantity
+              th Total
+            tr
+              td
+                  img(src='./public/images/item-cart-04.jpg' alt='IMG')
+              td.pt-5.lh-1 Fresh Strawberries
+              td.pt-5.lh-1 $ 36.00
+              td
+                .soLuong.mt-3
+                    .wrapper.ms-0
+                        span.minus -
+                        span.num 01
+                        span.plus +
+              td.pt-5.lh-1 $ 36.00
+            tr
+              td
+                  img(src='./public/images/item-cart-05.jpg' alt='IMG')
+              td.pt-5.lh-1 Lightweight Jacket
+              td.pt-5.lh-1 $ 16.00
+              td
+                .soLuong.mt-3
+                    .wrapper.ms-0
+                        span.minus -
+                        span.num 01
+                        span.plus +
+              td.pt-5.lh-1 $ 16.00
+        .coupon-code
+            input.form-control.rounded-pill(type='text' name='coupon' placeholder='Coupon Code')
+            .btn.rounded-pill.bg-secondary-subtle.mx-4.px-5.btn-apply
+                | Apply coupon
+            .btn.rounded-pill.bg-secondary-subtle.mx-4.px-5.btn-update
+                | Update Cart
+  .col-sm-10.col-lg-7.col-xl-5.mb-5
+    .border.py-3.cart-total
+      h4.pb-3
+        | Cart Totals
+      .d-flex.border-bottom.pb-3.mb-3
+          span.fw-bold.pe-4
+            | Subtotal:
+          span.fw-bold
+            | $79.65
+      .border-bottom.pb-2
+          .d-flex
+            span.fw-bold.pe-4
+                | Shipping:
+            p.pe-2
+                | There are no shipping methods available. Please double check your address, or
+                | contact us if you need any help.
+          .ps-5.ms-5
+            span
+              | CALCULATE SHIPPING
+              select.form-select.form-select-sm.mb-2(name='time' tabindex='-1' aria-hidden='true')
+                option Select a country...
+                option USA
+                option UK
+              input.form-control.mb-2(type='text' name='state' placeholder='State /  country')
+              input.form-control.mb-2(type='text' name='postcode' placeholder='Postcode / Zip')
+            .btn.rounded-pill.btn-update.bg-secondary-subtle.px-4
+                | Update Totals
+      .d-flex.py-3
+          span.fw-bold.pe-4.me-4
+            | Total:
+          span
+            | $79.65
+      button.btn-post.text-white.px-5.py-2
+        | Proceed to Checkout

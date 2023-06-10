@@ -252,6 +252,31 @@ footer .btn-sub:hover {
     padding-left: 3rem;
 }
 
+.btn-apply:hover, .btn-update:hover {
+    color: white !important;
+    background: #717fe0 !important;
+}
+
+.cart-total {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.coupon-code {
+    display: flex;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+}
+
+@media (max-width: 1200px) {
+    .cart-total {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+}
+
 @media (max-width: 994px) {
     .top-header {
         display: unset !important;
@@ -271,5 +296,12 @@ footer .btn-sub:hover {
 @media (max-width: 765px) {
     .col-left-about {
         padding-left: unset !important;
+    }
+    .coupon-code {
+        display: inline-block;
+        padding: 10px 10px;
+    }
+    .coupon-code>input, .btn-apply {
+        margin-bottom: 10px;
     }
 }
