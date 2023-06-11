@@ -24,7 +24,7 @@
             +filterItem("Price","All","$0.00 - $50.00","$50.00 - $100.00","$100.00 - $150.00","$150.00 - $200.00","$200.00+")             
             +filterItem("Color","Red","Blue","Black","Green","Gray","White","circle")
             .title-filter.col-md-3 Tag
-                p#textfilter
+                p
                     a(href="#" class="tag") Fashion 
                     a(href="#" class="tag") Lifestyle
                     a(href="#" class="tag") Denim
@@ -32,7 +32,8 @@
                     a(href="#" class="tag") Crafts  
     include product    
     .product-btn-last
-        a(href="shop.html")  LOAD MORE    
-    include ./productshow            
+        a(href="shop.html")  LOAD MORE  
+    .product-detail  
+        include ./productshow            
                        
              

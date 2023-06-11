@@ -30,7 +30,7 @@ mixin bannerItem(textTop,textBottom,effect)
 mixin filterItem(title,nd1,nd2,nd3,nd4,nd5,nd6,circle)
     if circle 
         .title-filter.col-md-3= title 
-            ul#textfilter
+            ul
                 li
                     span(style=`background:${nd1}`)
                     a(href="#")= nd1      
@@ -51,7 +51,7 @@ mixin filterItem(title,nd1,nd2,nd3,nd4,nd5,nd6,circle)
                     a(href="#")= nd6 
     else 
         .title-filter.col-md-3= title 
-            ul#textfilter
+            ul
                 li
                     a(href="#")= nd1      
                 li
