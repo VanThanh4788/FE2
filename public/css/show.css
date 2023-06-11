@@ -6,9 +6,10 @@
     position: fixed;
     top: 0;
     left:0;
-    padding: 5% 20%;
+    padding: 6% 20%;
     background: rgb(0, 0, 0,0.8);
-    min-height: 100vh;
+    min-height: 50vh;
+    max-height: 120vh;
     display: none;
 }
 .productshow

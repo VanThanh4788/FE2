@@ -19,13 +19,32 @@ minus.addEventListener("click", () => {
     num.innerText = a;
   }
 });
+//heart background
+const productIcon= document.querySelectorAll(".product-icon");
+productIcon.forEach(element => {
+  element.addEventListener('click',function() {
+    if(element.classList.contains("actived"))
+    {
+      element.classList.remove ("actived");
+      element.querySelector('i').classList.remove('zmdi-favorite')
+      element.querySelector('i').classList.add('zmdi-favorite-outline')
+    }
+    else
+    {
+      element.classList.add("actived");
+      element.querySelector('i').classList.add('zmdi-favorite')
+      element.querySelector('i').classList.remove('zmdi-favorite-outline')
+    }    
+  })
+});
+
 
 //show product view
 btnProduct = document.querySelectorAll('.product-btn');
 const productShow = document.querySelector('.productshow');
 const productDetail = document.querySelector('.product-detail');
 productShow.addEventListener('click', function (event) {
-  //ham dung de chan su kien click lan toa (click cha anh huong toi con)
+  //ham dung de chan su kien click lan toa (click con anh huong cha)
   event.stopPropagation();
 })
 btnProduct.forEach(element => {

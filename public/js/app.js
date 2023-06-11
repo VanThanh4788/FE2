@@ -9,6 +9,7 @@ const searchDisplay = document.querySelector('.input-search')
 //fiter product
 const product_filter = document.querySelectorAll('.product');
 
+//su kien click vao nut search
 search.addEventListener('click', function () {
   if (search.classList.contains('actived')) {
     search.classList.remove('actived')
@@ -17,10 +18,12 @@ search.addEventListener('click', function () {
   else {
     search.classList.add('actived')
     filter.classList.remove('actived')
-    searchDisplay.style.display = 'flex';
+    searchDisplay.style.display = 'block';
     filterDisplay.classList.add('d-none')
   }
 })
+
+//su kien click vao filter
 filter.addEventListener('click', function () {
   if (filter.classList.contains('actived')) {
     filter.classList.remove('actived')

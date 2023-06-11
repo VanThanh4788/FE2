@@ -200,7 +200,12 @@ body {
 .product-icon {
     position: absolute;
     top: 10%;
-    right: 5%;
+    right: 5%;  
+}
+.product-icon.actived
+{
+    background: white;
+    color: rgba(103, 117, 214);
 }
 
 .product-name {
@@ -309,20 +314,20 @@ body {
 
 .banner.slide-1 {
     background-image: url(../images/slide-01.jpg);
-    max-width: 100%;
-    height: auto;
 }
 
 .banner.slide-2 {
     background: url(../images/slide-02.jpg);
-    max-width: 100%;
-    height: auto;
 }
 
 .banner.slide-3 {
     background: url(../images/slide-03.jpg);
-    max-width: 100%;
+}
+.banner.slide-1,.banner.slide-2,.banner.slide-3{
+    background-size: cover;
     height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /* animation */
 /* animation cho text 1 */
@@ -371,7 +376,7 @@ body {
 
 .banner-text-2 {
     font-family: PlayfairDisplay-Bold;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     margin: 15px 0 25px 0;
     opacity: 0;
@@ -393,6 +398,7 @@ body {
     padding: 0;
     opacity: 0;
 }
+
 /* slide3 */
 @keyframes sprin-slide3-text2 {
     0% {
@@ -509,3 +515,59 @@ body {
 }
 /* banner */
 
+/*==================================================================
+  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
+==================================================================*/
+
+@media (max-width: 1199px) {
+    .container{
+        width: 100% !important;
+    }
+    .categories.row{
+        justify-content: center;
+    }
+    a.category.position-relative.col-md-4{
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 991px){
+    .product{
+        width: calc(33.33% - 30px);
+    }
+}
+
+@media (max-width: 767px){
+    .product{
+        width: calc(50% - 30px);
+    }
+    .title-filter.col-md-3{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1199px){
+    .container{
+     max-width: none;
+    }
+    .container,.container-sm {
+        max-width: none !important;
+    }
+}
+
+@media (max-width: 575px){
+    a.category.position-relative.col-md-4{
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+    .title-filter.col-md-3{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .product{
+        width: calc(100% - 30px);
+    }
+}
