@@ -36,7 +36,7 @@
                   </ul>
                   <div class="d-flex justify-content-between">
                     <div class="icon-header-item px-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="zmdi zmdi-search"></i></div>
-                    <div class="icon-header-item icon-header-noti px-3" data-notify="0"><i class="zmdi zmdi-shopping-cart"></i></div>
+                    <div class="icon-header-item icon-header-noti px-3" data-notify="0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="zmdi zmdi-shopping-cart"></i></div>
                     <div class="icon-header-item icon-header-noti px-3" href="#" data-notify="0"><i class="zmdi zmdi-favorite-outline"></i></div>
                   </div>
                 </div>
@@ -144,6 +144,34 @@
                   <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-end px-4 py-4" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel" style="z-index: 1100">
+          <div class="offcanvas-header mt-3">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">YOUR CART</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <div class="overflow-auto">
+                <ul>
+                      <li class="header-cart-item d-flex mb-2"><img class="img-fluid me-3" src="./public/images/item-cart-01.jpg" alt="IMG">
+                        <div class="header-cart-item-txt d-flex flex-column"><a class="text-secondary text-decoration-none active pt-2" href="#">White Shirt Pleat</a><span class="text-secondary pt-3">1 x $19.00</span></div>
+                      </li>
+                      <li class="header-cart-item d-flex mb-2"><img class="img-fluid me-3" src="./public/images/item-cart-02.jpg" alt="IMG">
+                        <div class="header-cart-item-txt d-flex flex-column"><a class="text-secondary text-decoration-none active pt-2" href="#">Converse All Star</a><span class="text-secondary pt-3">1 x $39.00</span></div>
+                      </li>
+                      <li class="header-cart-item d-flex mb-2"><img class="img-fluid me-3" src="./public/images/item-cart-03.jpg" alt="IMG">
+                        <div class="header-cart-item-txt d-flex flex-column"><a class="text-secondary text-decoration-none active pt-2" href="#">Nixon Porter Leather</a><span class="text-secondary pt-3">1 x $17.00</span></div>
+                      </li>
+                </ul>
+                <div class="my-5 pt-5">
+                  <div class="header-cart-total fs-5 py-4">Total: $75.00</div>
+                  <div class="header-cart-buttons"><a class="btn-post text-white text-decoration-none px-4 py-2 mb-3 me-3" href="shoping-cart.html">View Cart</a><a class="btn-post text-white text-decoration-none px-4 py-2 mb-3" href="shoping-cart.html">Check Out</a></div>
+                </div>
               </div>
             </div>
           </div>
