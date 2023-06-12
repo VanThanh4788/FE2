@@ -1,5 +1,5 @@
 mixin categoryItem(image,name,season,button)
-        a.category.position-relative.col-md-4(href="#")
+        a.category.position-relative.col-md-4(href="shop.html")
             img(class="category-img",src= image, alt="")
             .category-overlay
             .category-name= name
@@ -13,7 +13,7 @@ mixin productItem(image,name,price,category)
                 img(class="product-img",src= image, alt="")
                 .product-btn  Quick View
             .product-text
-                .product-name= name 
+                a(href="productdetail.html" class="product-name")= name 
                 .product-price= price 
                 .product-icon.active.fs-5
                     i.zmdi.zmdi-favorite-outline

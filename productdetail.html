@@ -41,7 +41,7 @@
                   </ul>
                   <div class="d-flex justify-content-between">
                     <div class="icon-header-item px-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="zmdi zmdi-search"></i></div>
-                    <div class="icon-header-item icon-header-noti px-3" data-notify="0"><i class="zmdi zmdi-shopping-cart"></i></div>
+                    <div class="icon-header-item icon-header-noti px-3" data-notify="0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="zmdi zmdi-shopping-cart"></i></div>
                     <div class="icon-header-item icon-header-noti px-3" href="#" data-notify="0"><i class="zmdi zmdi-favorite-outline"></i></div>
                   </div>
                 </div>
@@ -99,8 +99,7 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-01.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Esprit Ruffle Shirt</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Esprit Ruffle Shirt</a>
             <div class="product-price">$16.64</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
           </div>
@@ -109,8 +108,7 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-02.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Herschel supply</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Herschel supply</a>
             <div class="product-price">$16.64</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
           </div>
@@ -119,8 +117,7 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-03.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Only Check Trouser</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Only Check Trouser</a>
             <div class="product-price">$16.64</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
           </div>
@@ -129,8 +126,7 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-04.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Classic Trench Coat</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Classic Trench Coat</a>
             <div class="product-price">$75.00</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
           </div>
@@ -139,8 +135,7 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-05.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Front Pocket Jumper</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Front Pocket Jumper</a>
             <div class="product-price">$34.75</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
           </div>
@@ -149,8 +144,7 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-06.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Vintage Inspired Classic</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Vintage Inspired Classic</a>
             <div class="product-price">$93.20</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
           </div>
@@ -159,8 +153,7 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-07.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Shirt in Stectch Cotton</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Shirt in Stectch Cotton</a>
             <div class="product-price">$52.66</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
           </div>
@@ -169,10 +162,52 @@
           <div class="product-image"><img class="product-img" src="./public/images/product-08.jpg" alt=""/>
             <div class="product-btn"> Quick View</div>
           </div>
-          <div class="product-text">
-            <div class="product-name">Pieces Metallic Printed</div>
+          <div class="product-text"><a class="product-name" href="productdetail.html">Pieces Metallic Printed</a>
             <div class="product-price">$18.96</div>
             <div class="product-icon active fs-5"><i class="zmdi zmdi-favorite-outline"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-detail"> 
+      <div class="productshow row"> 
+        <div class="product-image-detail col-md-1">  <a href="#">
+            <div class="productshow-img"><img class="img-select" width="100%" src="./public/images/product-detail-01.jpg" alt=""></div></a><a href="#">
+            <div class="productshow-img"><img class="img-select" width="100%" src="./public/images/product-detail-02.jpg" alt=""></div></a><a href="#">
+            <div class="productshow-img"><img class="img-select" width="100%" src="./public/images/product-detail-03.jpg" alt=""></div></a></div>
+        <div class="product-image-main col-md-6"><img class="img-main" width="100%" src="./public/images/product-detail-01.jpg" alt=""></div>
+        <div class="productshow-content col-md-5"><br>
+          <h3 class="productshow-name"> Lightweight Jacket</h3>
+          <p></p>
+          <h4 class="productshow-price">$58.79</h4>
+          <p></p>
+          <div class="productshow-decs">Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</div><br>
+          <div class="productshow-addcart">
+            <div class="productshow-select"><span>Size</span>
+              <select name="size" id="size"> 
+                <option value="#">Choose an option</option>
+                <option value="Size S">Size S</option>
+                <option value="Size M">Size M</option>
+                <option value="Size L">Size L</option>
+                <option value="Size XL">Size XL</option>
+              </select>
+            </div>
+            <p></p>
+            <div class="productshow-select"><span>Color</span>
+              <select name="color" id="color"> 
+                <option value="#">Choose an option</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Grey">Grey </option>
+                <option value="White">White</option>
+              </select>
+            </div><br>
+            <div class="soLuong">
+              <div class="wrapper"><span class="minus">-</span><span class="num">01</span><span class="plus">+</span></div>
+            </div><br>
+            <div class="btnDetail">
+              <div class="btn productshow"><a class="all-btn text-decoration-none" href="#"> ADD TO CART </a></div>
+            </div>
           </div>
         </div>
       </div>
@@ -190,8 +225,36 @@
           <div class="modal-body">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-success" type="submit" style="opacity: 1">Search</button>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end px-4 py-4" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel" style="z-index: 1100">
+      <div class="offcanvas-header mt-3">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">YOUR CART</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="overflow-auto">
+            <ul>
+                  <li class="header-cart-item d-flex mb-2"><img class="img-fluid me-3" src="./public/images/item-cart-01.jpg" alt="IMG">
+                    <div class="header-cart-item-txt d-flex flex-column"><a class="text-secondary text-decoration-none active pt-2" href="#">White Shirt Pleat</a><span class="text-secondary pt-3">1 x $19.00</span></div>
+                  </li>
+                  <li class="header-cart-item d-flex mb-2"><img class="img-fluid me-3" src="./public/images/item-cart-02.jpg" alt="IMG">
+                    <div class="header-cart-item-txt d-flex flex-column"><a class="text-secondary text-decoration-none active pt-2" href="#">Converse All Star</a><span class="text-secondary pt-3">1 x $39.00</span></div>
+                  </li>
+                  <li class="header-cart-item d-flex mb-2"><img class="img-fluid me-3" src="./public/images/item-cart-03.jpg" alt="IMG">
+                    <div class="header-cart-item-txt d-flex flex-column"><a class="text-secondary text-decoration-none active pt-2" href="#">Nixon Porter Leather</a><span class="text-secondary pt-3">1 x $17.00</span></div>
+                  </li>
+            </ul>
+            <div class="my-5 pt-5">
+              <div class="header-cart-total fs-5 py-4">Total: $75.00</div>
+              <div class="header-cart-buttons"><a class="btn-post text-white text-decoration-none px-4 py-2 mb-3 me-3" href="shoping-cart.html">View Cart</a><a class="btn-post text-white text-decoration-none px-4 py-2 mb-3" href="shoping-cart.html">Check Out</a></div>
+            </div>
           </div>
         </div>
       </div>
@@ -229,7 +292,7 @@
             <h5>Newsletter</h5>
             <form>
               <input class="input-email" type="text" name="email" placeholder="email@example.com">
-              <button class="btn btn-sub rounded-pill mt-3 px-5 py-2">Subscribe</button>
+              <button class="btn btn-sub rounded-pill mt-3 px-5 py-2" style="opacity: 1">Subscribe</button>
             </form>
           </div>
         </div>
