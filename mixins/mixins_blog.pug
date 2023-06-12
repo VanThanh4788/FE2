@@ -25,7 +25,7 @@ mixin navbar()
                 .d-flex.justify-content-between
                     .icon-header-item.px-3(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
                         i.zmdi.zmdi-search
-                    .icon-header-item.icon-header-noti(data-notify='0' data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample").px-3
+                    .icon-header-item.icon-header-noti(data-notify='2' data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample").px-3
                         i.zmdi.zmdi-shopping-cart
                     .icon-header-item.icon-header-noti(href='#' data-notify='0').px-3
                         i.zmdi.zmdi-favorite-outline
@@ -137,4 +137,3 @@ mixin banner(src)
         include ../pug/contact
     else 
         include ../pug/about
-
