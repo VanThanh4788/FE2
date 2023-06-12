@@ -1,0 +1,13 @@
+.overflow-auto
+    ul
+        +shoping-cart('./public/images/item-cart-01.jpg', 'White Shirt Pleat', '#', '1 x $19.00')
+        +shoping-cart('./public/images/item-cart-02.jpg', 'Converse All Star', '#', '1 x $39.00')
+        +shoping-cart('./public/images/item-cart-03.jpg', 'Nixon Porter Leather', '#', '1 x $17.00')
+    .my-5.pt-5
+        .header-cart-total.fs-5.py-4
+            | Total: $75.00
+        .header-cart-buttons
+            a.btn-post.text-white.text-decoration-none.px-4.py-2.mb-3.me-3(href='shoping-cart.html')
+                | View Cart
+            a.btn-post.text-white.text-decoration-none.px-4.py-2.mb-3(href='shoping-cart.html')
+                | Check Out

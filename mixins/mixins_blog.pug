@@ -25,7 +25,7 @@ mixin navbar()
                 .d-flex.justify-content-between
                     .icon-header-item.px-3(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
                         i.zmdi.zmdi-search
-                    .icon-header-item.icon-header-noti(data-notify='0').px-3
+                    .icon-header-item.icon-header-noti(data-notify='0' data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample").px-3
                         i.zmdi.zmdi-shopping-cart
                     .icon-header-item.icon-header-noti(href='#' data-notify='0').px-3
                         i.zmdi.zmdi-favorite-outline
@@ -102,6 +102,13 @@ mixin path(name, src, title)
     a(href= src).text-decoration-none.active.text-body-secondary= name 
         i.fa.fa-angle-right.m-l-9.m-r-10(aria-hidden="true")
     span.text-decoration-none.text-body-tertiary= title
+
+mixin shoping-cart(src, name, href, price)
+    li.header-cart-item.d-flex.mb-2
+        img(src= src alt='IMG').img-fluid.me-3
+        .header-cart-item-txt.d-flex.flex-column
+            a.text-secondary.text-decoration-none.active.pt-2(href= href)= name
+            span.text-secondary.pt-3= price
 
 mixin banner(src)
     if src == 'blog-detail'
