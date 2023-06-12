@@ -40,7 +40,17 @@ productIcon.forEach(element => {
 
 
 //show product view
-btnProduct = document.querySelectorAll('.product-btn');
+//change image product detail
+const imgSelect= document.querySelectorAll(".img-select");
+const imgMain= document.querySelector(".img-main");
+imgSelect.forEach(element => {
+  element.addEventListener('click',function(){
+    imgMain.src=element.src;
+  })
+});
+
+//An hien product show
+const btnProduct = document.querySelectorAll('.product-btn');
 const productShow = document.querySelector('.productshow');
 const productDetail = document.querySelector('.product-detail');
 productShow.addEventListener('click', function (event) {
