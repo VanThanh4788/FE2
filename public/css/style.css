@@ -210,7 +210,7 @@ body {
 .product-icon.actived
 {
     background: white;
-    color: rgba(103, 117, 214);
+    color: rgba(103,117, 214);
 }
 
 .product-name:hover {
@@ -310,7 +310,7 @@ body {
 .banner {
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     width: 100%;
 }
 

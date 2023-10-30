@@ -31,12 +31,35 @@ function nav(scrollPosition, p) {
     }
 }
 
-function btntop() {   
+function btntop() {
     const btntop = document.querySelector('#myBtn');
     btntop.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
+    });
+}
+
+//navbar
+const navLinks = document.querySelectorAll('.nav-link');
+if (navLinks.length === 0) {
+    console.log('Mảng rỗng.');
+} else {
+    console.log('Mảng không rỗng.');
+}
+navLinks.forEach(element => {
+    element.addEventListener('click', function () {
+        removeActiveNavbar();
+        alert('a');
+        element.classList.add('active');
+    })
+});
+
+function removeActiveNavbar() {
+    navLinks.forEach(element => {
+        element.addEventListener('click', function () {
+            element.classList.remove('active');
+        })
     });
 }
